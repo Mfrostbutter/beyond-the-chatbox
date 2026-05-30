@@ -28,7 +28,8 @@ By the end you'll have:
 
 1. [Claude Code Install](./claude-code-install.md) — Install Node.js and Claude Code, authenticate
 2. [VS Code Setup](./vscode-setup.md) — Install VS Code and the Claude Code extension
-3. [Bootstrap Prompt](./bootstrap-prompt.md) — Paste this into Claude Code to scaffold your first project
+3. [Claude Desktop Connectors](./claude-desktop-connectors.md) — Add Filesystem and GitHub connectors so Claude can read and write your project files
+4. [Bootstrap Prompt](./bootstrap-prompt.md) — Paste this into Claude Code to scaffold your first project
 
 ---
 
@@ -37,6 +38,7 @@ By the end you'll have:
 Work through the guides in order:
 1. Start with [claude-code-install.md](./claude-code-install.md)
 2. Then [vscode-setup.md](./vscode-setup.md)
-3. Then paste the [bootstrap-prompt.md](./bootstrap-prompt.md) into a fresh Claude Code session
+3. Then [claude-desktop-connectors.md](./claude-desktop-connectors.md) — **do this before the bootstrap prompt**
+4. Then paste the [bootstrap-prompt.md](./bootstrap-prompt.md) into a fresh Claude Code session
 
 Once you have Claude Code running, move to [05 — Context Engineering](../05-context-engineering/) to understand how to structure your project for maximum AI effectiveness.

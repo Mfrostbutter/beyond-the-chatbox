@@ -39,6 +39,7 @@ This is like having a contractor who reads the job file before every visit.
 - [Writing Your CLAUDE.md](./writing-your-claude-md.md) — Step-by-step guide with fill-in-the-blank structure
 - [Repo Structure Patterns](./repo-structure-patterns.md) — How to organize files so the AI always knows where things are
 - [Prompting in the IDE](./prompting-in-ide.md) — Effective prompting patterns once you're in Claude Code
+- [Hooks](./hooks.md) — Shell commands that run automatically at key moments (stop, notify, block)
 
 ---
 

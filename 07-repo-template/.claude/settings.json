@@ -15,5 +15,29 @@
       "Bash(ls*)",
       "Bash(find . *)"
     ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '--- Claude finished ---' && git diff --name-only HEAD 2>/dev/null && echo '(run: git diff to see full changes)'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[Claude is waiting for your input]'"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "personal-notes": {
+      "command": "python",
+      "args": ["server.py"],
+      "cwd": "${workspaceFolder}/09-mcp-servers/your-first-server"
+    }
+  }
+}

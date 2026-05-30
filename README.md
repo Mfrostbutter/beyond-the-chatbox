@@ -39,8 +39,13 @@ Work through these in order. Each section builds on the last.
 | [06 - Extended Knowledge](./06-extended-knowledge/) | Knowledge system | A markdown-based knowledge folder Claude Code reads as context |
 | [07 - Repo Template](./07-repo-template/) | Ready-to-use template | Copy this, fill in your details, have a context-engineered repo in minutes |
 | [08 - Automation Platforms](./08-automation-platforms/) | No-code workflows | n8n, Make, Zapier — build real automations without writing code |
+| [09 - MCP Servers](./09-mcp-servers/) | Extend Claude's tools | Build a working Python MCP server that gives Claude new capabilities |
 
 ---
+
+## Quick Start
+
+**New here?** Clone the repo, open it in Claude Code, and paste [AI-SETUP-PROMPT.md](./AI-SETUP-PROMPT.md) to get a personalized starting point.
 
 ## How to use this repo
 

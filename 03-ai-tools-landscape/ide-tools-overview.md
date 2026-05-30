@@ -1,6 +1,24 @@
 # IDE-Based AI Tools
 
-These tools run inside your development environment — VS Code, a terminal, or a dedicated AI-first editor. They can read your files, run commands, edit code, commit to Git, and maintain context across sessions.
+These tools run outside the browser — on your desktop, in a terminal, or inside your editor. They can read your files, edit code, maintain context across sessions, and connect to external services.
+
+---
+
+## Claude Desktop
+
+**Made by:** Anthropic
+**Runs in:** Desktop app (Windows and macOS)
+**Pricing:** Claude Pro ($20/month) or Claude Max ($100/month)
+**Best for:** People who want to work with files and projects without touching a terminal
+
+**What makes it different:**
+- **Projects** — upload your CLAUDE.md, docs, or any files; Claude reads them at the start of every conversation
+- **Connectors** — give Claude access to your local filesystem, GitHub, Google Drive, and more
+- **No terminal required** — everything runs through a GUI you already understand
+- **Same models as the API** — Claude Sonnet, Haiku, Opus depending on your plan
+- **MCP server support** — connect custom tools the same way Claude Code does
+
+**When to use it:** When you want AI to help with your real files and projects but you're not comfortable in a terminal yet. The BOOTSTRAP prompt in this repo works in Claude Desktop just as well as in Claude Code.
 
 ---
 
@@ -79,23 +97,26 @@ These tools run inside your development environment — VS Code, a terminal, or 
 
 ## Comparison table
 
-| Tool | Interface | File access | Runs commands | Persistent context | Model flexibility |
+| Tool | Interface | File access | Runs commands | Persistent context | Needs terminal |
 |---|---|---|---|---|---|
-| Claude Code | Terminal + VS Code ext | Full | Yes | CLAUDE.md | Claude only |
-| Cursor | Dedicated editor | Full | Yes | .cursorrules | Claude, GPT, Gemini |
-| Cline | VS Code extension | Full | Yes | .clinerules | Any provider |
-| GitHub Copilot | VS Code + IDEs | Limited | No | None | GitHub models |
+| Claude Desktop | Desktop app | Via connector | No | Projects + CLAUDE.md | No |
+| Claude Code | Terminal + VS Code ext | Full (built-in) | Yes | CLAUDE.md | Yes |
+| Cursor | Dedicated editor | Full | Yes | .cursorrules | No |
+| Cline | VS Code extension | Full | Yes | .clinerules | No |
+| GitHub Copilot | VS Code + IDEs | Limited | No | None | No |
 
 ---
 
 ## Which should you start with?
 
-**If you're new to all of this:** Start with Claude Code. It's the focus of this repo, has excellent documentation, and the `CLAUDE.md` pattern it uses is the cleanest context engineering system available.
+**If you're new to terminals or just want something that works immediately:** Start with Claude Desktop. Install it, set up the Filesystem connector (section 04), and paste the BOOTSTRAP prompt in a conversation. No Node.js, no command line.
 
-**If you want an all-in-one polished editor:** Try Cursor. Download it at cursor.com and import your VS Code settings.
+**If you're comfortable in a terminal and want more control:** Use Claude Code. It runs commands, manages git, and does more autonomous work. It's the more powerful path and the one most of section 04 covers.
+
+**If you want an all-in-one polished editor:** Try Cursor.
 
 **If you want to stay in VS Code and use multiple models:** Try Cline.
 
-**If your workplace already uses GitHub:** Copilot is probably already available to you. It's a good first AI tool even if you eventually add Claude Code.
+**If your workplace already uses GitHub:** Copilot is probably already available to you. It's a good starting point even if you eventually add Claude Desktop or Claude Code.
 
-You don't need to pick just one. Many people run Claude Code in the terminal + Copilot in VS Code simultaneously.
+You don't need to pick just one. Many people use Claude Desktop for day-to-day work and Claude Code for heavier engineering tasks.

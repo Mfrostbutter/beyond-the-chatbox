@@ -49,9 +49,11 @@ Work through these in order. Each section builds on the last.
 
 ## How to use this repo
 
-**Option A — Read it on GitHub.** Everything is plain markdown. No setup required. Start at `01-foundations/README.md` and work your way through.
+**Option A — Read it on GitHub.** No setup required. Start at `01-foundations/README.md` and work through the sections in order.
 
-**Option B — Clone it and open in Claude Code.** Once you've completed section 04, clone this repo and open it in Claude Code. Ask Claude Code to walk you through the `07-repo-template/BOOTSTRAP.md` to scaffold your own project.
+**Option B — Claude Desktop (no terminal).** Install Claude Desktop, set up the [Filesystem and GitHub connectors](./04-ide-setup/claude-desktop-connectors.md), then paste the [bootstrap prompt](./04-ide-setup/bootstrap-prompt.md) into a conversation to scaffold your first project. No Node.js, no command line.
+
+**Option C — Claude Code CLI (full power).** Complete section 04's CLI path (Node.js + `npm install -g @anthropic-ai/claude-code`), then open this repo in Claude Code and run the bootstrap prompt. Better for developers who want Claude to run commands and manage git autonomously.
 
 ---
 

@@ -1,6 +1,10 @@
-# Bootstrap Prompt — Your First Claude Code Session
+# Bootstrap Prompt — Scaffold Your First Project
 
-This is a prompt you can paste into a fresh Claude Code session to get oriented and scaffold your first project. Copy the prompt below and paste it into Claude Code.
+This prompt works in both Claude Desktop and Claude Code. Paste it into a fresh conversation (Desktop) or a new Claude Code session (CLI) to scaffold your first context-engineered project.
+
+**Claude Desktop users:** Make sure the [Filesystem connector is set up](./claude-desktop-connectors.md) with your project folder added before running this. Claude needs file access to create the folder structure.
+
+**Claude Code users:** Run `claude` from inside your project directory, then paste the prompt.
 
 ---
 

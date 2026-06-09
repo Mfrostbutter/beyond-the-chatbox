@@ -45,7 +45,7 @@ Work through these in order. Each section builds on the last.
 
 ## Quick Start
 
-**New here?** Clone the repo, open it in Claude Code, and paste [AI-SETUP-PROMPT.md](./AI-SETUP-PROMPT.md) to get a personalized starting point.
+**New to this and not a coder?** Open [AI-SETUP-PROMPT.md](./AI-SETUP-PROMPT.md). It walks you through getting this guide in front of an AI assistant (a browser Claude window works) and pasting one prompt that gives you a personalized starting point. No tools required to begin.
 
 ## How to use this repo
 

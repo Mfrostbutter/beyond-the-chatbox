@@ -1,4 +1,4 @@
-# AI Setup Prompt — Beyond the Chatbox
+# AI Setup Prompt: Beyond the Chatbox
 
 This is a guided orientation. You do not need to know how to code. You will get this guide in front of an AI assistant, paste one prompt, and get a personalized starting point instead of a generic "read from the beginning."
 

@@ -35,6 +35,23 @@ Think of Git like a very detailed save history for your project:
 
 That's 90% of what you need to know to get started. The rest is details.
 
+Visually, those four concepts fit together like this:
+
+```mermaid
+flowchart TD
+    R["📁 Repository<br/>(your project + its full history)"]
+    R --> M["🌳 main branch"]
+    R --> F["🌿 feature branch<br/>(your safe workspace)"]
+    M --> C1["💾 commit"]
+    M --> C2["💾 commit"]
+    F --> C3["💾 commit"]
+    F --> C4["💾 commit"]
+    C4 --> PR{"🔀 Pull Request<br/>review the changes"}
+    PR -->|approved &amp; merged| M
+```
+
+The feature branch lets you work without touching `main`. When you're happy, a Pull Request proposes folding your commits back in.
+
 ---
 
 ## What to do next

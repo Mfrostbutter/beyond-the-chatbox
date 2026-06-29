@@ -53,6 +53,31 @@ Like a forum attached to your repo. Good for longer-form questions, ideas, and k
 
 When Claude Code opens a PR, a common workflow looks like this:
 
+```mermaid
+---
+config:
+  themeVariables:
+    labelBoxBorderColor: "#6e7681"
+---
+sequenceDiagram
+    participant You as 👉 You
+    participant Claude as 🟠 Claude Code
+    participant GH as 🟢 GitHub
+    Claude->>Claude: 📝 make changes, commit to a branch
+    Claude->>GH: 📤 push branch & open PR
+    You->>GH: review the diff
+    opt ask for a second opinion
+        You->>Claude: 💬 "review this PR, list any issues"
+        Claude-->>You: feedback on the diff
+    end
+    alt looks good
+        You->>GH: approve & merge
+        GH->>GH: delete branch, changes land in main
+    else needs work
+        You->>Claude: 💬 request revisions
+    end
+```
+
 1. Claude Code makes changes and commits them to a branch
 2. Claude Code (or you) pushes the branch and opens a PR on GitHub
 3. You review the diff — what changed, why, does it look right?

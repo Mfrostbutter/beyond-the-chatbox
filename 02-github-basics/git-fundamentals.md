@@ -28,6 +28,23 @@ The default branch is usually called `main`. Feature branches are usually named 
 ### Merge
 Combining the changes from one branch into another. When your feature is ready, you merge it into `main`.
 
+Here's a branch splitting off `main`, getting its own commits, then merging back:
+
+```mermaid
+gitGraph
+    commit id: "initial setup"
+    commit id: "add README"
+    branch feature/new-agent
+    checkout feature/new-agent
+    commit id: "draft agent"
+    commit id: "refine agent"
+    checkout main
+    merge feature/new-agent id: "merge PR"
+    commit id: "next change"
+```
+
+`main` keeps moving in a straight line. Your branch is a detour that rejoins it once the work is reviewed and merged.
+
 ### Pull Request (PR)
 A proposal to merge your branch's changes into another branch, usually `main`. PRs let teammates review changes before they're merged. On GitHub, PRs show a diff (what changed), support comments, and require approvals.
 
@@ -43,6 +60,20 @@ git clone https://github.com/username/repo-name
 ### Push / Pull
 - **Push:** Send your local commits to the remote (GitHub)
 - **Pull:** Download new commits from the remote to your local machine
+
+```mermaid
+flowchart LR
+    subgraph local["💻 Your machine (local)"]
+        L["Local repo"]
+    end
+    subgraph remote["🌐 GitHub (remote)"]
+        G["Remote repo"]
+    end
+    L -->|"git push"| G
+    G -->|"git pull"| L
+```
+
+`clone` is the one-time first copy from GitHub to your machine. After that, `push` and `pull` keep the two in sync.
 
 ### .gitignore
 A file that tells Git which files to ignore — secrets, credentials, build artifacts, OS files. Always add `.env` files (which contain API keys) to `.gitignore`.
@@ -90,6 +121,17 @@ git pull
 ## The workflow in practice
 
 Day-to-day, working with Git looks like this:
+
+```mermaid
+flowchart LR
+    A["📥 Pull<br/>latest changes"] --> B["🌿 Create<br/>a branch"]
+    B --> C["📝 Make<br/>changes"]
+    C --> D["💾 Stage &amp;<br/>commit"]
+    D --> E["📤 Push<br/>to GitHub"]
+    E --> F["🔀 Open<br/>a PR"]
+    F --> G["✅ Review<br/>&amp; merge"]
+    G -.->|next task| A
+```
 
 1. **Pull** to get the latest changes from your team
 2. **Create a branch** for your new work

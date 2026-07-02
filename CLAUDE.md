@@ -1,6 +1,6 @@
 # context-engineering-blueprint — Claude Code Context
 
-Last updated: 2026-05-01.
+Last updated: 2026-07-02.
 
 ## Mission
 
@@ -16,15 +16,18 @@ Educational repo for people transitioning from web-based AI chat tools to IDE-ba
 
 ## Directory Structure
 
-- `01-foundations/` — AI concepts, YouTube channels, whitepapers, glossary
-- `02-github-basics/` — Git fundamentals, GitHub for AI workflows, resources
-- `03-ai-tools-landscape/` — Web chat vs IDE comparison, tool overview
-- `04-ide-setup/` — Claude Code install, VS Code setup, bootstrap prompts
-- `05-context-engineering/` — CLAUDE.md pattern, repo structure, prompting in IDE
-- `06-extended-knowledge/` — Knowledge folder setup, Obsidian integration
-- `07-repo-template/` — Drop-in template: copy, fill in, go
-- `08-automation-platforms/` — n8n, Make, Zapier — beginner workflows
-- `resources/` — Prompt library, communities
+- `00-prerequisites/` - One-time setup: Claude Pro, Git, VS Code, Docker Desktop
+- `01-foundations/` - AI concepts, YouTube channels, whitepapers, glossary
+- `02-github-basics/` - Git fundamentals, GitHub for AI workflows, resources
+- `03-ai-tools-landscape/` - Web chat vs IDE comparison, tool overview
+- `04-ide-setup/` - Claude Code install, VS Code setup, bootstrap prompts
+- `05-context-engineering/` - CLAUDE.md pattern, repo structure, prompting in IDE
+- `06-extended-knowledge/` - Knowledge folder setup, Obsidian integration
+- `07-repo-template/` - Drop-in template: copy, fill in, go
+- `08-automation-platforms/` - n8n, Make, Zapier beginner workflows
+- `09-mcp-servers/` - How MCP works, build your first server
+- `docs/` - Images used by the guides
+- `resources/` - Prompt library, communities
 
 ## Key Files
 

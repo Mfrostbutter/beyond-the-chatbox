@@ -4,6 +4,8 @@ A field guide for people who want to stop chatting with AI and start working wit
 
 Written for technically curious folks who currently live in Claude.ai, ChatGPT, or Gemini and want to understand what's possible when you bring AI into your actual work environment.
 
+**AI agents and assistants:** start with [CLAUDE.md](./CLAUDE.md) and [AI-SETUP-PROMPT.md](./AI-SETUP-PROMPT.md).
+
 ---
 
 ## Who this is for

@@ -35,7 +35,9 @@ Don't build one for things Claude Code already does well: reading your local fil
 
 ## Start by using one, not building one
 
-Before you write any code, know this: you rarely have to. There's a large ecosystem of ready-made MCP servers for common tools (GitHub, Slack, Postgres, Google Drive, Notion, and many more). Adding one is a single command.
+Before you write any code, know this: you rarely have to. There's a large ecosystem of ready-made MCP servers for common tools (GitHub, Slack, Postgres, Google Drive, Notion, and many more). How you add one depends on your track from [section 04](../04-ide-setup/).
+
+**Claude Code (terminal).** Adding a server is a single command:
 
 ```bash
 claude mcp add --help
@@ -47,7 +49,11 @@ For example, to add a filesystem server that lets Claude work with a specific fo
 claude mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem /path/to/folder
 ```
 
-Then type `/mcp` inside Claude Code to confirm it's connected and see its tools. Browse what exists before assuming you need to build.
+Then type `/mcp` inside Claude Code to confirm it's connected and see its tools.
+
+**Claude Desktop.** You've already done this once. The Filesystem connector you set up in [section 04](../04-ide-setup/claude-desktop-connectors.md) *is* an MCP server. To add more, open **Settings > Connectors** (or the `+` menu in a chat) and browse the directory. Many popular servers install with one click as **Extensions**. Custom or local servers (like the one you'll build next) are added by editing a config file instead, covered in the build guide below.
+
+Either way, browse what exists before assuming you need to build.
 
 **Build your own only when nothing off the shelf fits** — usually because the data lives in your own files, your own database, or an internal tool. That's what the rest of this section walks through.
 

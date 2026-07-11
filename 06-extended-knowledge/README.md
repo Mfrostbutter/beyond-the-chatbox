@@ -35,7 +35,9 @@ When CLAUDE.md contains:
 - Learnings: `knowledge/learnings/`
 ```
 
-Claude Code reads those directories before working. When you say "check if we've dealt with this before," it searches the knowledge folder. When you ask "why did we make this architectural decision," it reads `knowledge/decisions/`.
+**Claude Code** reads those directories before working. When you say "check if we've dealt with this before," it searches the knowledge folder. When you ask "why did we make this architectural decision," it reads `knowledge/decisions/`.
+
+**Claude Desktop** works the same way once it can see the folder. With the [Filesystem connector](../04-ide-setup/claude-desktop-connectors.md), tell it to "check `knowledge/learnings/` before answering," or point at the folder in your Project instructions so it does this by default. The folder is identical; only the "read it" step is manual on Desktop, exactly like CLAUDE.md itself.
 
 ---
 

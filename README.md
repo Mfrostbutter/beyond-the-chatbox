@@ -59,6 +59,8 @@ Work through these in order. Each section builds on the last.
 
 **Option C — Claude Code CLI (full power).** Complete section 04's CLI path (Node.js + `npm install -g @anthropic-ai/claude-code`), then open this repo in Claude Code and run the bootstrap prompt. Better for developers who want Claude to run commands and manage git autonomously.
 
+Options B and C are the two hands-on **tracks** the rest of the guide follows. You pick one in [section 04](./04-ide-setup/), and wherever the two differ, the guide flags it with a **Claude Desktop** / **Claude Code** note. Everything you build works in both, so switching later costs you nothing.
+
 ---
 
 ## The core idea

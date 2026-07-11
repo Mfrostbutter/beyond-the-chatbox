@@ -52,11 +52,9 @@ python server.py
 
 You should see no output and no errors. The server is waiting for input from Claude Code. Press Ctrl+C to stop it.
 
-**Step 2 — Copy the MCP config to your project root**
+**Step 2 — Write the config**
 
-Copy `.mcp.json` from this folder to your project's root directory (same level as `CLAUDE.md`).
-
-Edit two things: point `command` at the Python **inside your venv**, and set `cwd` to this folder's absolute path. Both must be absolute paths — relative paths fail depending on where Claude Code is launched from, and Claude Code does not activate your venv for you, so a bare `"python"` may not find the `mcp` module.
+Both tracks use the **same JSON**, just in a different place. Whichever you're on, you edit two things: point `command` at the Python **inside your venv**, and set `cwd` to this folder's absolute path. Both must be absolute paths, because the tool that launches the server does not activate your venv for you, so a bare `"python"` may not find the `mcp` module.
 
 **Mac / Linux:**
 ```json
@@ -84,15 +82,24 @@ Edit two things: point `command` at the Python **inside your venv**, and set `cw
 }
 ```
 
-**Step 3 — Start Claude Code**
+Now put that JSON in the right place for your track.
 
-Open Claude Code in your project directory. It reads `.mcp.json` on startup and launches the server automatically.
+**Step 3 — Connect it (pick your track)**
 
-**Step 4 — Verify the tools are available**
+**Claude Code (terminal):**
+1. Copy `.mcp.json` from this folder to your project's root directory (same level as `CLAUDE.md`) and paste your edited JSON into it.
+2. Start Claude Code in that project directory. It reads `.mcp.json` on startup and launches the server automatically.
+3. Type `/mcp` in Claude Code. You should see `personal-notes` listed with its three tools.
 
-Type `/mcp` in Claude Code. You should see `personal-notes` listed with its three tools.
+**Claude Desktop:**
+1. Open **Settings > Developer > Edit Config**. This opens `claude_desktop_config.json` (and creates it if it doesn't exist).
+2. Paste your edited JSON into that file and save. If the file already has an `mcpServers` block, add `personal-notes` inside it rather than pasting a second one.
+3. **Fully quit and reopen Claude Desktop.** It launches the server on startup; changes don't take effect until you restart.
+4. In a chat, open the tools/connector menu (the `+` or the slider icon). You should see `personal-notes` and its three tools.
 
-**Step 5 — Try it**
+**Step 4 — Try it**
+
+In a new conversation (either track):
 
 ```
 Save a note: "decided to use Postgres instead of SQLite for this project because we expect > 10k rows"

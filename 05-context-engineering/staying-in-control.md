@@ -4,6 +4,8 @@ Claude Code can read your files, run commands, and change things. That power is 
 
 This page covers the four controls that matter most for beginners: plan mode, permissions, context management, and cost.
 
+> **Which track are you on?** The commands and toggles below (`/clear`, plan mode, `settings.json`) are **Claude Code**. Each section adds a short **In Claude Desktop** note with the equivalent, since Desktop handles these differently.
+
 ---
 
 ## 1. Plan mode — look before it leaps
@@ -17,6 +19,8 @@ This is the single best habit for staying in control. You review the plan, say "
 You can also just ask, in any mode:
 
 > Before making changes, show me your plan and wait for my OK.
+
+**In Claude Desktop:** there's no plan-mode toggle, so use that sentence. Ask Claude to lay out its plan and wait for approval before it touches files. Putting a standing version of that line in your Project instructions makes it the default.
 
 ---
 
@@ -45,6 +49,8 @@ Anything in `allow` runs without a prompt. Everything else still asks.
 
 **One thing to avoid as a beginner:** the `--dangerously-skip-permissions` flag turns off all approvals and lets Claude run anything without asking. It has its place for experienced users in throwaway environments. It is not where you start. The name is a warning, not a dare.
 
+**In Claude Desktop:** there's no `settings.json`. Permissions live in each connector's settings as **Tool permissions** (set a tool to *Always allow* or *Ask*). The same rule of thumb applies: leave write and delete tools on *Ask* until you trust a workflow. Section 04 walks through this for the [Filesystem connector](../04-ide-setup/claude-desktop-connectors.md).
+
 ---
 
 ## 3. Context management — keep the window clean
@@ -58,6 +64,8 @@ Two commands keep it healthy:
 
 The habit: **one task, one conversation.** Clear when you switch.
 
+**In Claude Desktop:** start a **New chat** instead of `/clear` (same effect, fresh context). There's no `/compact`; if a conversation gets long and sluggish, start a new chat. Your Project instructions and knowledge reload automatically in the new chat, so you don't lose project context.
+
 ---
 
 ## 4. Cost — know what you're spending
@@ -65,6 +73,8 @@ The habit: **one task, one conversation.** Clear when you switch.
 - **`/cost`** shows token usage for the current session. Check it now and then to build intuition for what things cost.
 - If you're on a **Claude Pro or Max subscription**, you're paying a flat monthly fee. There's no per-session bill to watch, just usage limits that reset.
 - If you're using an **API key**, you pay per token. Set a spending limit in the [Anthropic Console](https://console.anthropic.com) under Billing so a runaway session can't surprise you. Using `/clear` between tasks also keeps costs down, because a smaller context means fewer tokens per message.
+
+**In Claude Desktop:** there's no `/cost` command. Desktop runs on your subscription, so you're on a flat monthly fee with usage limits that reset, not a per-session bill. Nothing to watch beyond those limits.
 
 ---
 

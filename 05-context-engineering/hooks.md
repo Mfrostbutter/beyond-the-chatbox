@@ -1,5 +1,7 @@
 # Hooks — Automating Claude's Behavior
 
+> **Claude Code only.** Hooks are a terminal/Claude Code feature. If you're on the **Claude Desktop** track, you can skip this page. Desktop has no hooks; its closest equivalent is a Project's custom instructions (a standing rule Claude follows in every conversation, like "after making changes, summarize what changed"). It's not automatic the way a hook is, but it covers the common cases. Come back here if you later add Claude Code.
+
 Hooks are shell commands that run automatically at specific moments during a Claude Code session. They let you attach behavior to events without asking Claude to do it every time.
 
 ---

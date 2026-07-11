@@ -109,15 +109,26 @@ Python automation scripts for processing customer data exports and generating we
 
 ---
 
-## How Claude Code uses it
+## How each environment uses it
 
-When you run `claude` in your project directory, Claude Code:
+This is the one place the two tracks from [section 04](../04-ide-setup/) genuinely differ, so it's worth being clear.
+
+**Claude Code (terminal).** It's automatic. When you run `claude` in your project directory, Claude Code:
 1. Finds CLAUDE.md in the current directory
 2. Reads it before doing anything else
 3. Applies the rules throughout the session
 4. Knows where to look for things without asking
 
-The result: the AI behaves consistently across sessions, doesn't make decisions that violate your rules, and always knows your project structure.
+You do nothing. Every session starts already briefed.
+
+**Claude Desktop.** Desktop does *not* automatically read CLAUDE.md. It's a Claude Code convention. But you still get the same benefit with one small habit. Two ways to do it:
+
+- **Best: use a Project.** Create a Project in Claude Desktop and, in the Project's custom instructions, add a line like: *"At the start of every conversation, use the Filesystem connector to read CLAUDE.md in the project folder and follow it."* Now every chat in that Project briefs itself, the same way Claude Code does. (You'll need the [Filesystem connector](../04-ide-setup/claude-desktop-connectors.md) set up.)
+- **Quick: just ask.** At the start of a conversation, say *"Read CLAUDE.md in my project folder before we start."* Less automatic, but it works anywhere.
+
+Either way, the file itself is identical. You write one CLAUDE.md; only *how it gets loaded* differs by environment.
+
+The result in both: the AI behaves consistently across sessions, doesn't make decisions that violate your rules, and always knows your project structure.
 
 ---
 

@@ -85,6 +85,8 @@ If you have constraints, state them:
 
 ## Use `/` commands
 
+> **Claude Code.** These slash commands are terminal commands. In **Claude Desktop**, the equivalents live in menus and buttons (start a **New chat** instead of `/clear`; usage shows against your plan rather than `/cost`). The prompting advice above this section applies to both tracks equally.
+
 Claude Code has built-in slash commands:
 
 | Command | What it does |

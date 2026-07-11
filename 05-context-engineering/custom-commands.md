@@ -1,5 +1,7 @@
 # Custom Slash Commands
 
+> **Claude Code only.** Custom slash commands live in a `.claude/commands/` folder that Claude Code reads. **Claude Desktop** doesn't have them. The Desktop equivalent is keeping a few reusable prompts in a note (or in a Project's instructions) and pasting them when needed. Same idea, more manual. Skip this page if you're on the Desktop track.
+
 You've seen built-in slash commands like `/clear` and `/cost`. You can also make your own. A custom command is just a saved prompt you can trigger by name, so you stop retyping the same instructions.
 
 If you find yourself pasting the same multi-line request into Claude Code over and over, that's a command waiting to be made.

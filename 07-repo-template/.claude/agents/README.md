@@ -1,5 +1,7 @@
 # Agents
 
+> **Claude Code only.** Agents (like the rest of the `.claude/` folder: `commands/`, `settings.json`, and hooks) are read by Claude Code, not Claude Desktop. If you're on the **Claude Desktop** track, you can ignore this folder. It does no harm sitting in your project, and the parts that *do* work in both environments (`CLAUDE.md` and the `knowledge/` folder) are unaffected. The Desktop equivalent of an agent is a Project with focused instructions.
+
 This folder contains agent definitions for Claude Code. Each agent is a specialized assistant scoped to a specific task.
 
 ## How agents work

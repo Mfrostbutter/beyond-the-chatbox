@@ -40,8 +40,10 @@ This is like having a contractor who reads the job file before every visit.
 - [Repo Structure Patterns](./repo-structure-patterns.md) — How to organize files so the AI always knows where things are
 - [Prompting in the IDE](./prompting-in-ide.md) — Effective prompting patterns once you're in Claude Code
 - [Staying in Control](./staying-in-control.md) — Plan mode, permissions, context management, and cost
-- [Custom Slash Commands](./custom-commands.md) — Turn a prompt you keep retyping into a `/command`
-- [Hooks](./hooks.md) — Shell commands that run automatically at key moments (stop, notify, block)
+- [Custom Slash Commands](./custom-commands.md) — Turn a prompt you keep retyping into a `/command` *(Claude Code only)*
+- [Hooks](./hooks.md) — Shell commands that run automatically at key moments *(Claude Code only)*
+
+> **On the two tracks (from [section 04](../04-ide-setup/)):** CLAUDE.md and the knowledge folder work in both Claude Desktop and Claude Code. Hooks and custom commands are Claude Code only, and each of those pages opens with the Desktop equivalent. The core skill in this section applies no matter which track you chose.
 
 ---
 

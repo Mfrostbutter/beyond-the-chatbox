@@ -26,10 +26,10 @@ Use this if you're not comfortable with a terminal, or just want the fastest pat
 
 Use this if you're comfortable in a terminal or want Claude to run commands, manage git, and work autonomously on larger tasks.
 
-**What you need:** A Claude API key (~$5-20/month) or Claude Max subscription. Node.js installed.
+**What you need:** The same Claude Pro or Max account from the Desktop path works here (an Anthropic API key is an alternative). Node.js installed.
 
 **Steps:**
-1. [Claude Code Install](./claude-code-install.md) — install Node.js and Claude Code, get an API key
+1. [Claude Code Install](./claude-code-install.md) — install Node.js and Claude Code, sign in
 2. [VS Code Setup](./vscode-setup.md) — install VS Code and the Claude Code extension
 3. [Bootstrap Prompt](./bootstrap-prompt.md) — paste this into a Claude Code session to scaffold your project
 

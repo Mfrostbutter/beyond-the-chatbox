@@ -19,8 +19,8 @@ The tools most people start with. All of them work in a browser, require no setu
 
 **Limitations:**
 - Web interface has no memory by default (Projects feature adds persistent context)
-- Can't access the internet in real time (no live search by default)
-- API key required for Claude Code
+- A chat window can't read or write files on your machine — that's what section 04 sets up
+- Claude Code is a separate tool (covered in section 04) and is included with a Claude Pro or Max subscription
 
 **Best for:** Complex tasks, long documents, coding questions, tasks where you want thoughtful, careful responses.
 

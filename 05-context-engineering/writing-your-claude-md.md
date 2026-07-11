@@ -4,6 +4,22 @@ Use this guide to create your own CLAUDE.md from scratch. Fill in the sections b
 
 ---
 
+## The fast way: let Claude Code draft it
+
+If you already have Claude Code set up (section 04) and an existing project folder, don't start from a blank page. Open Claude Code in the project and run:
+
+```
+/init
+```
+
+Claude Code scans your files and writes a first-draft `CLAUDE.md` for you — mission, structure, and any conventions it can infer. It's rarely perfect, but it turns "stare at an empty file" into "edit a solid draft."
+
+Then use the rest of this guide to sharpen it: tighten the mission, add your real non-negotiables, and fix the folder descriptions. **`/init` gets you 70% there; the sections below get you the last 30%, which is the part that actually changes how the AI behaves.**
+
+Brand new project with no files yet? Skip `/init` and fill in the template by hand, starting with Step 1.
+
+---
+
 ## Step 1: Mission
 
 Write one sentence. What is this project? What does it produce or manage?

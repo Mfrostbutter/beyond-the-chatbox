@@ -127,7 +127,7 @@ Running tools like n8n locally via Docker is free and private. No account, no su
 
 ## Optional: OpenAI API account
 
-An OpenAI API account gives you access to GPT-4o, o1, and other OpenAI models. Not required for this repo — everything here uses Claude — but useful if you want to compare models, use GPT-4o in n8n workflows, or work with tools that default to OpenAI.
+An OpenAI API account gives you access to OpenAI's GPT models. Not required for this repo — everything here uses Claude — but useful if you want to compare models, use OpenAI in n8n workflows, or work with tools that default to it.
 
 **Set it up:**
 1. Go to https://platform.openai.com
@@ -136,7 +136,7 @@ An OpenAI API account gives you access to GPT-4o, o1, and other OpenAI models. N
 4. Go to API Keys and create a key
 5. Store it somewhere safe — you'll add it to `.env` files, never paste it in chat
 
-**Pricing:** Pay-as-you-go. GPT-4o is ~$2.50/1M input tokens. Typical workflow usage is cents per run. No subscription required.
+**Pricing:** Pay-as-you-go, priced per token (typically a few dollars per million input tokens, depending on the model). Typical workflow usage is cents per run. No subscription required. Check current rates at https://openai.com/api/pricing.
 
 **When you'd use it:** n8n has native OpenAI nodes. Some community tools and templates default to OpenAI. Having the key means you can run those without modification.
 

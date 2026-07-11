@@ -1,6 +1,6 @@
 # context-engineering-blueprint — Claude Code Context
 
-Last updated: 2026-07-02.
+Last updated: 2026-07-11.
 
 ## Mission
 
@@ -34,4 +34,9 @@ Educational repo for people transitioning from web-based AI chat tools to IDE-ba
 - `07-repo-template/BOOTSTRAP.md` — Paste into Claude Code to scaffold a new project
 - `07-repo-template/CLAUDE.md` — Annotated template with fill-in-the-blank sections
 - `07-repo-template/.claude/agents/` — Four ready-to-use agents + create-your-own prompt
+- `07-repo-template/.claude/commands/` — Starter custom slash command (`/review`)
 - `04-ide-setup/bootstrap-prompt.md` — First-session prompt for brand new Claude Code users
+- `04-ide-setup/claude-desktop-connectors.md` — No-terminal path: enable the Filesystem connector
+- `05-context-engineering/staying-in-control.md` — Plan mode, permissions, context, cost
+- `05-context-engineering/custom-commands.md` — Author your own slash commands
+- `.github/workflows/link-check.yml` — CI enforcing the real-links-only rule

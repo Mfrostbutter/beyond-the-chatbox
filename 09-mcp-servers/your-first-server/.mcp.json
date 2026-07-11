@@ -3,7 +3,7 @@
     "personal-notes": {
       "command": "python",
       "args": ["server.py"],
-      "cwd": "${workspaceFolder}/09-mcp-servers/your-first-server"
+      "cwd": "/absolute/path/to/beyond-the-chatbox/09-mcp-servers/your-first-server"
     }
   }
 }

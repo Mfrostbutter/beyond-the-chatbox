@@ -39,23 +39,25 @@ claude --version
 
 ---
 
-## Step 3: Get an API key
+## Step 3: Choose how you'll pay for it
+
+You have two options. Most people should use the subscription.
+
+**Option A — Claude subscription (recommended).** Claude Code is included with **Claude Pro** ($20/month) and **Claude Max** (from $100/month). If you set up Claude Pro back in section 00, you already have access. No API key needed — you'll log in with your Claude.ai account in the next step.
+
+**Option B — Anthropic API key (pay as you go).** Bills per use through the Console instead of a flat monthly fee. Useful if you don't have a subscription or expect very light usage.
 
 1. Go to https://console.anthropic.com
 2. Sign in or create an account
 3. Click "API Keys" in the left sidebar
-4. Click "Create Key"
-5. Name it (e.g., "claude-code-personal")
-6. Copy the key — it starts with `sk-ant-...`
+4. Click "Create Key" and name it (e.g., "claude-code-personal")
+5. Copy the key — it starts with `sk-ant-...`
 
 > Keep this key private. Treat it like a password. Don't paste it into chat windows or commit it to GitHub.
 
-**Alternative: Claude Max subscription**
-If you have a Claude Max plan ($100/month), you can use your Claude.ai login instead of an API key. Run `claude` and follow the OAuth login flow — no API key needed.
-
 ---
 
-## Step 4: Authenticate
+## Step 4: Sign in
 
 Run Claude Code for the first time:
 
@@ -63,9 +65,12 @@ Run Claude Code for the first time:
 claude
 ```
 
-It will prompt you to enter your API key (or log in with your Anthropic account). Follow the on-screen instructions.
+It will ask how you want to log in:
 
-Once authenticated, you'll see the Claude Code prompt. Type `/help` to see available commands, or just start typing to have a conversation.
+- **Subscription (Option A):** choose the Claude.ai login. Your browser opens, you approve, and you're in. No key to copy or store.
+- **API key (Option B):** paste the `sk-ant-...` key when prompted.
+
+Once you're signed in, you'll see the Claude Code prompt. Type `/help` to see available commands, or just start typing to have a conversation.
 
 ---
 

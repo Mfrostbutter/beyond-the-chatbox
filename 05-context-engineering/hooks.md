@@ -106,6 +106,10 @@ The `matcher` field filters by tool name for `PreToolUse`/`PostToolUse`. Leave i
 
 ### Block a specific bash pattern (PreToolUse)
 
+A hook does not get the tool details in an environment variable. Claude Code sends them as **JSON on standard input**. For a `Bash` call, the command being run is at `.tool_input.command`. So the hook reads stdin, pulls out the command, and decides.
+
+This example uses [`jq`](https://jqlang.github.io/jq/) to read the JSON (install it with `brew install jq` on Mac, `winget install jqlang.jq` on Windows):
+
 ```json
 "PreToolUse": [
   {
@@ -113,14 +117,14 @@ The `matcher` field filters by tool name for `PreToolUse`/`PostToolUse`. Leave i
     "hooks": [
       {
         "type": "command",
-        "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -q 'rm -rf'; then echo 'Blocked: rm -rf is not allowed'; exit 2; fi"
+        "command": "cmd=$(jq -r '.tool_input.command'); if echo \"$cmd\" | grep -qE 'rm .*-rf'; then echo 'Blocked: rm -rf is not allowed' >&2; exit 2; fi"
       }
     ]
   }
 ]
 ```
 
-Exit code `2` blocks the tool call and surfaces the message to Claude. Exit code `0` lets it proceed.
+Exit code `2` blocks the tool call and surfaces the message (written to stderr) to Claude. Exit code `0` lets it proceed. Any other exit code is treated as a non-blocking error and execution continues.
 
 ---
 

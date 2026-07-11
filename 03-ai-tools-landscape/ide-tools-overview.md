@@ -8,7 +8,7 @@ These tools run outside the browser — on your desktop, in a terminal, or insid
 
 **Made by:** Anthropic
 **Runs in:** Desktop app (Windows and macOS)
-**Pricing:** Claude Pro ($20/month) or Claude Max ($100/month)
+**Pricing:** Claude Pro ($20/month) or Claude Max (from $100/month)
 **Best for:** People who want to work with files and projects without touching a terminal
 
 **What makes it different:**
@@ -26,7 +26,7 @@ These tools run outside the browser — on your desktop, in a terminal, or insid
 
 **Made by:** Anthropic
 **Runs in:** Terminal (any), VS Code extension
-**Pricing:** Requires Claude API key (~$3-15/month typical usage) or Claude Max subscription ($100/month, unlimited)
+**Pricing:** Included with Claude Pro ($20/month) and Claude Max (from $100/month). You can also pay as you go with an Anthropic API key (billed through the Console). Log in with your Claude.ai subscription or an API key.
 **Best for:** This is what this repo focuses on — see section 04 for full setup
 
 **What makes it different:**

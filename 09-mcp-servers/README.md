@@ -33,6 +33,26 @@ Don't build one for things Claude Code already does well: reading your local fil
 
 ---
 
+## Start by using one, not building one
+
+Before you write any code, know this: you rarely have to. There's a large ecosystem of ready-made MCP servers for common tools (GitHub, Slack, Postgres, Google Drive, Notion, and many more). Adding one is a single command.
+
+```bash
+claude mcp add --help
+```
+
+For example, to add a filesystem server that lets Claude work with a specific folder:
+
+```bash
+claude mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem /path/to/folder
+```
+
+Then type `/mcp` inside Claude Code to confirm it's connected and see its tools. Browse what exists before assuming you need to build.
+
+**Build your own only when nothing off the shelf fits** — usually because the data lives in your own files, your own database, or an internal tool. That's what the rest of this section walks through.
+
+---
+
 ## What's in this section
 
 - [How MCP Works](./how-mcp-works.md) — the protocol explained without jargon
@@ -42,4 +62,4 @@ Don't build one for things Claude Code already does well: reading your local fil
 
 ## What to do next
 
-Read [How MCP Works](./how-mcp-works.md) for a mental model, then follow [Your First Server](./your-first-server/README.md) to build one.
+Read [How MCP Works](./how-mcp-works.md) for a mental model. Try adding a prebuilt server with `claude mcp add` above. Then, when you have a need nothing off the shelf covers, follow [Your First Server](./your-first-server/README.md) to build one.

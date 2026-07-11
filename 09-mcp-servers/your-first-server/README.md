@@ -18,11 +18,25 @@ Once connected, you can say "save a note: decided to use Postgres for this proje
 
 ## Prerequisites
 
-Python 3.10+ and the MCP SDK:
+Python 3.10+ and the MCP SDK. Install the SDK into a virtual environment so it doesn't collide with other Python projects:
 
+**Mac / Linux:**
 ```bash
+cd 09-mcp-servers/your-first-server
+python3 -m venv .venv
+source .venv/bin/activate
 pip install mcp
 ```
+
+**Windows (PowerShell):**
+```powershell
+cd 09-mcp-servers\your-first-server
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install mcp
+```
+
+> If `pip install mcp` succeeds but running the server later says `No module named 'mcp'`, you installed it with a different Python than the one launching the server. Activating the venv first (as above) avoids this — the most common beginner snag.
 
 ---
 
@@ -30,8 +44,9 @@ pip install mcp
 
 **Step 1 — Test the server runs**
 
+With the venv still activated from the Prerequisites step:
+
 ```bash
-cd 09-mcp-servers/your-first-server
 python server.py
 ```
 
@@ -41,21 +56,33 @@ You should see no output and no errors. The server is waiting for input from Cla
 
 Copy `.mcp.json` from this folder to your project's root directory (same level as `CLAUDE.md`).
 
-Edit the `cwd` path to match where you put the server:
+Edit two things: point `command` at the Python **inside your venv**, and set `cwd` to this folder's absolute path. Both must be absolute paths — relative paths fail depending on where Claude Code is launched from, and Claude Code does not activate your venv for you, so a bare `"python"` may not find the `mcp` module.
 
+**Mac / Linux:**
 ```json
 {
   "mcpServers": {
     "personal-notes": {
-      "command": "python",
+      "command": "/absolute/path/to/beyond-the-chatbox/09-mcp-servers/your-first-server/.venv/bin/python",
       "args": ["server.py"],
-      "cwd": "/absolute/path/to/your-first-server"
+      "cwd": "/absolute/path/to/beyond-the-chatbox/09-mcp-servers/your-first-server"
     }
   }
 }
 ```
 
-Use an absolute path. Relative paths can fail depending on where Claude Code is launched from.
+**Windows:**
+```json
+{
+  "mcpServers": {
+    "personal-notes": {
+      "command": "C:\\absolute\\path\\to\\beyond-the-chatbox\\09-mcp-servers\\your-first-server\\.venv\\Scripts\\python.exe",
+      "args": ["server.py"],
+      "cwd": "C:\\absolute\\path\\to\\beyond-the-chatbox\\09-mcp-servers\\your-first-server"
+    }
+  }
+}
+```
 
 **Step 3 — Start Claude Code**
 

@@ -4,6 +4,8 @@ A field guide for people who want to stop chatting with AI and start working wit
 
 Written for technically curious folks who currently live in Claude.ai, ChatGPT, or Gemini and want to understand what's possible when you bring AI into your actual work environment.
 
+![Beyond the Chatbox — moving from web chat to working with AI in your files, knowledge, and workflows](./docs/img/fb-post-infographic.png)
+
 **AI agents and assistants:** start with [CLAUDE.md](./CLAUDE.md) and [AI-SETUP-PROMPT.md](./AI-SETUP-PROMPT.md).
 
 ---
@@ -69,4 +71,8 @@ This repo teaches you how to do that.
 
 ## Contributing
 
-This is a living document. If you find outdated links, have a better resource to suggest, or want to add an example workflow — open a pull request.
+This is a living document. If you find outdated links, have a better resource to suggest, or want to add an example workflow, open a pull request. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the house style and how to submit.
+
+## License
+
+[MIT](./LICENSE) — free to use, copy, adapt, and share.

@@ -35,6 +35,29 @@ Think of Git like a very detailed save history for your project:
 
 That's 90% of what you need to know to get started. The rest is details.
 
+Visually, those four concepts fit together like this:
+
+```mermaid
+flowchart TB
+    subgraph Repo["📁 Repository — the whole project + its full history"]
+        direction TB
+        Start["💾 first commit"]
+        subgraph mainlane["🌳 main · the official version"]
+            direction TB
+            M1["💾 commit"] --> M2["💾 latest"]
+        end
+        subgraph featlane["🌿 branch · your safe copy"]
+            direction TB
+            B1["💾 commit"] --> B2["💾 commit"]
+        end
+        Start -->|stays on main| M1
+        Start -->|branch off| B1
+        B2 -->|open PR, merge| M2
+    end
+```
+
+Read it top to bottom, like a timeline. You start from a commit on `main`, **branch off** into a safe copy, **commit** your changes there, then open a **Pull Request** to merge the branch back into `main` — which becomes the new latest. While you experiment on the branch, `main` stays intact until the work is reviewed and ready.
+
 ---
 
 ## What to do next
